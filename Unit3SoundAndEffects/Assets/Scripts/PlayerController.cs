@@ -8,14 +8,16 @@ public class PlayerController : MonoBehaviour
     private Rigidbody playerRb;
     public float jumpForce;
     public float gravityModifier;
-   
+    public bool isOnGround = true;
     
+
+
     void Start()
     {
         playerRb = GetComponent<Rigidbody>();
         Physics.gravity *= gravityModifier;
     }
-    public bool isOnGround = true;
+    
 
     void Update()
     {
@@ -24,10 +26,11 @@ public class PlayerController : MonoBehaviour
             playerRb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse); 
             isOnGround = false;
 
-            private void OnCollisionEnter(Collision collision)
-            {
-                isOnGround = true;
-            }
         }
+        
+    }
+    private void OnCollisionEnter(Collision collision)
+    {
+        isOnGround = true;
     }
 }
