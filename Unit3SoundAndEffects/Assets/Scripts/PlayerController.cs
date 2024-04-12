@@ -8,15 +8,15 @@ public class PlayerController : MonoBehaviour
     private Rigidbody playerRb;
     public float jumpForce;
     public float gravityModifier;
-    public bool isOnGround = true;
+   
     
     void Start()
     {
         playerRb = GetComponent<Rigidbody>();
         Physics.gravity *= gravityModifier;
     }
+    public bool isOnGround = true;
 
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space) && isOnGround)
