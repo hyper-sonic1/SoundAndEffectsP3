@@ -709,6 +709,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9635d4fc3a61a84cbf5d302c394a32b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  obstaclePrefabs:
+  - {fileID: 4265353345409478881, guid: 76ceac53e05006646a77329e80dda845, type: 3}
+  - {fileID: 8204713470718425673, guid: 691fa1cb57e5a3244bb5751de7789bd9, type: 3}
+  - {fileID: 8759577806299574219, guid: 8b88d783ca79a264db313444aca267a5, type: 3}
+  - {fileID: 376404971864603056, guid: c15385ce6e3d66d44a673515d629a092, type: 3}
   obstaclePrefab: {fileID: 376404971864603056, guid: c15385ce6e3d66d44a673515d629a092, type: 3}
 --- !u!198 &1469923730 stripped
 ParticleSystem:
