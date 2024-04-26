@@ -818,6 +818,9 @@ MonoBehaviour:
   dirtPartical: {fileID: 623295519}
   jumpSound: {fileID: 8300000, guid: 0f7d0b7c3397f4dac91f20e8a77d2d57, type: 3}
   crashSound: {fileID: 8300000, guid: 4bcde6de2166e41e284ec46d8a01fb90, type: 3}
+  doubleJumpUsed: 0
+  doubleJumpForce: 4
+  doubleSpeed: 0
 --- !u!65 &1712835122
 BoxCollider:
   m_ObjectHideFlags: 0
