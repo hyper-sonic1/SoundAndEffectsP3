@@ -52,7 +52,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKey(KeyCode.LeftShift))
         {
             doubleSpeed = true;
-            playerAnim.SetFloat("Speed_Mulriplier", 2.0f);
+            playerAnim.SetFloat("Speed_Multiplier", 2.0f);
         }
         else if(doubleSpeed)
         {
