@@ -20,6 +20,7 @@ public class PlayerControllerX : MonoBehaviour
     public bool isLowEnough;
 
     public AudioClip bouncesound;
+    public float celling = 14.36f;
 
 
     // Start is called before the first frame update
@@ -44,9 +45,10 @@ public class PlayerControllerX : MonoBehaviour
             playerRb.AddForce(Vector3.up * floatForce);
         }
 
-        if (transform.position.y > 13)
+        if (transform.position.y > celling)
         {
-            isLowEnough = false;
+            transform.position = new Vector3(transform.position.x, celling, transform.position.z);
+            playerRb.velocity = Vector3.zero;
         }
         else
         {
